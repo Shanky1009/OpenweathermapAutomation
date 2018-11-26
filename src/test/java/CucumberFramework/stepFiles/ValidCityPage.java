@@ -22,8 +22,8 @@ public class ValidCityPage {
 
 	@Then("^application shall display weather details for the city name$")
 	public void user_should_be_able_to_see_the_homepage_title_searchbox_and_searchbutton() throws Throwable {
-		Assert.assertTrue(BasePage.driver.findElement(By.xpath("//a[@text=' Nagpur, IN']")).isDisplayed());
-		Assert.assertTrue(BasePage.driver.findElement(By.cssSelector("button.badge.badge-info")).isDisplayed());
-		Assert.assertTrue(BasePage.driver.findElement(By.xpath("//p[@text='Geo coords ']")).isDisplayed());
+		Assert.assertTrue(BasePage.driver.findElement(By.xpath("//a[contains(text(), ' Nagpur, IN')]")).isDisplayed());
+		Assert.assertTrue(BasePage.driver.findElement(By.xpath("//p/span[@class='badge badge-info']")).isDisplayed());
+		Assert.assertTrue(BasePage.driver.findElement(By.xpath("//p[contains(text(),'Geo coords ')]")).isDisplayed());
 	}
 }
