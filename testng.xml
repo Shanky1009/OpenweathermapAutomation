@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test-Suite" parallel="tests" thread-count="2">
+
+    <test name="Slack Web Test Suite">
+        <parameter name="platform" value="web"/>
+        <classes>
+            <class name="JenkinsDemo.java"/>
+        </classes>
+    </test>
+</suite>
