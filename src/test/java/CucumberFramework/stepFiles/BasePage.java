@@ -20,17 +20,6 @@ public class BasePage {
 		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 	}
 	
-//	@Before
-//	public void setup_firefox() {
-//		System.setProperty("webdriver.gecko.driver", "C:\\Users\\ankiy\\Desktop\\CucumberFramework\\CucumberFramework\\src\\test\\java\\CucumberFramework\\resources\\geckodriver.exe");
-//		FirefoxOptions firefoxOptions = new FirefoxOptions();
-//		firefoxOptions.setCapability("marionette", true);
-//		this.driver = new FirefoxDriver(firefoxOptions);
-//		this.driver.manage().window().maximize();
-//		this.driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-//		this.driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-//	}
-	
 	@After
 	public void tearDown() {
 		driver.manage().deleteAllCookies();
