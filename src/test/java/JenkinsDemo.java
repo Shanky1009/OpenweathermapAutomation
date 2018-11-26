@@ -8,14 +8,12 @@ public class JenkinsDemo
 {
 
 	@Test
-	public void testgooglrsearch(){
+	public void testcityweather(){
 
 		WebDriver driver = new ChromeDriver();
-		//it will open the goggle page
-		driver.get("https://openweathermap.org/"); 
-		//we expect the title “Google “ should be present 
-		String Expectedtitle = "Google";
-		//it will fetch the actual title 
+		driver.get("https://openweathermap.org/");  
+		String Expectedtitle = "Current weather and forecast - OpenWeatherMap";
+		//it will fetch the actual title
 		String Actualtitle = driver.getTitle();
 		System.out.println("Before Assetion " + Expectedtitle + Actualtitle);
 		//it will compare actual title and expected title
